@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.red-snackbar{
+    background-color: rgb(255, 8, 0);
+    color: rgb(255, 255, 255);
+  
+}
+.green-snackbar{
+    background-color: rgb(2, 114, 45);
+    color: rgb(255, 255, 255);
+  
+}

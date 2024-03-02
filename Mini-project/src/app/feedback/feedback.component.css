@@ -1,0 +1,53 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top:250px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.thank{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.exp{
+    text-align: center;
+    
+}
+.emotion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    align-items: center;
+    padding: 10px;    
+}
+
+mat-card{
+    
+    width: 100%; 
+    max-width: 800px;
+    border: 1px solid rgb(53, 57, 70);
+    box-shadow: 8px 8px 8px 8px rgba(30, 30, 41, 0.5);
+}
+mat-icon{
+    font-size: 26px;
+}
+.a{display: flex; 
+ flex-direction: column;
+ padding: 10px;
+}
+mat-form-field{
+    width: 100%;
+}
+input{
+    font-size:30px;
+    width: 100%;
+}
+
+
+@media (max-width:760px){
+    .thank p{
+        font-size: 25px;
+    }
+}

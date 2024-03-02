@@ -1,0 +1,85 @@
+.parent-container{
+    display: flex;
+    justify-content: space-around;
+    gap:20px;
+    margin: 0 20px;
+    margin-top: 120px;
+}
+img{
+    width:500px;
+    
+    height: auto;
+    border-radius: 20px;
+}
+.form input{
+  color: rgb(27, 11, 82);
+  font-size:18px;
+}
+.form textarea{
+  color: rgb(27, 11, 82);
+}
+.form {
+    display: flex;
+    flex-direction: column; 
+    width: 500px;
+    margin-top: 100px;
+    border: 1px solid rgb(53, 57, 70);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 255, 0.5);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0 20px; 
+  }
+  mat-card{
+    margin-top: 100px;
+    border-radius: 20px;
+  }
+ .order-view{
+    text-align: center;
+    font-size: 30px;
+    
+ }
+ .add-remove{
+  display: flex;
+  justify-content: center;
+  gap:10px;
+  margin-top: 20px;
+ }
+ .add-remove input{
+  color:blue;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+ }
+ .priceQuant{
+  display: flex;
+  justify-content: space-between;
+  gap:5px;
+ }
+ .card-img{
+  
+  box-shadow: 10px 10px 10px -5px rgba(63, 61, 61, 0.5),-10px -10px 10px -5px rgba(128, 119, 119, 0.5);
+ }
+  button[type="submit"]{
+    background-color: rgb(8, 119, 95);
+    color: whitesmoke;
+    
+  }
+
+ 
+  
+  @media (max-width: 978px) {
+   
+    .parent-container {
+      flex-direction: column; 
+    }
+    .form {
+      width: 100%;
+    }
+    .image-container img{
+      max-width: 100%;
+    }
+    .description{
+     font-size: 25px;
+    }
+  }
+  

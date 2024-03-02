@@ -1,0 +1,92 @@
+.parent{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Ensures items are top-aligned */
+    
+    
+}
+.form-heading{
+    color: purple;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .form {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      max-width: 600px;
+      width: 100%;
+      margin-right: auto;
+      margin-top: 130px;
+      margin-left: 50px;
+      border: 2px solid black;
+      box-shadow: -5px -5px 5px 0px rgba(255, 217, 0, 0.7) inset,
+      5px -5px 5px 0px rgba(255, 217, 0, 0.7) inset,
+      -5px 5px 5px 0px rgba(255, 217, 0, 0.7) inset, 
+      5px 5px 5px 0px rgba(255, 217, 0, 0.7) inset; 
+      padding: 20px;
+      border-radius: 20px;
+     
+  }
+ 
+    
+    .row {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .radio {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    
+    .one mat-form-field {
+      width: 47%;
+    }
+    .mat-form-field{
+      margin-bottom: 30px;
+     
+    }
+    .street{
+      width:100%;
+       
+    }
+    .image {
+     
+      max-width: 50%;
+      margin-right: auto;
+      margin-top: 350px;
+      border: 2px solid black;
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4); 
+      text-align: center;
+      text-shadow: 6px 6px 10px orange; 
+    }
+    @media screen and (max-width: 768px) {
+      .parent{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+      }
+      .form {
+        max-width: 100%; 
+        margin: 0;
+        margin-top: 100px;
+      }
+    
+      .row.one {
+        flex-direction: column;
+      }
+    
+      .row.one mat-form-field {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .image{
+        display: none;
+      }
+     
+    }

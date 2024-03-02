@@ -1,0 +1,15 @@
+
+
+ 
+  <mat-chip-listbox class="chipbox" [(ngModel)]="selectedCategory" (ngModelChange)="onCategoryChange()">
+
+    <mat-chip-option value="" color="primary" class="larger-chip">All</mat-chip-option>
+
+    <mat-chip-option *ngFor="let category of categories" [value]="category" class="larger-chip" color="warn"
+     [matTooltip]="category"                     >
+      {{ category}}</mat-chip-option>
+    
+  </mat-chip-listbox>
+
+
+  <!-- [matBadge]="category.length" matBadgePosition="after"  matBadgeColor="warn" -->

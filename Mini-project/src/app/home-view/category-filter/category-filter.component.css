@@ -1,0 +1,17 @@
+
+.chipbox{
+  background-color: rgb(247, 191, 118);
+  margin-top: 105px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  
+}
+.larger-chip {
+  font-size: 18px; 
+  padding: 8px 16px;
+  border: 2px solid black;
+  
+}
+.larger-chip:hover{
+  background-color: rgb(19, 224, 207);
+  
+}

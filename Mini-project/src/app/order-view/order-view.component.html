@@ -1,0 +1,193 @@
+<div class="parent-container">
+<div class="order-view">
+
+  <mat-card class="card-img">
+  <div class="image-container">
+    <img [src]="selectedItem?.image" class="img" />
+  </div> 
+
+    <h3>{{ selectedItem?.name }}</h3>
+    <p class="description" style="font-size: 25px;">{{ selectedItem?.description }}</p>
+    <h3 style="font-size: 20px; font-weight: bold; color :Blue">Price - {{ selectedItem?.price }} $</h3>
+    </mat-card>
+    <div class="add-remove">
+      <button mat-mini-fab style="background-color:orange" (click)="decreaseValue()"><mat-icon>remove</mat-icon></button>
+      <input type="number" min="1" [(ngModel)]="inputValue">
+      <button mat-mini-fab style="background-color:dodgerblue" (click)="increaseValue()"><mat-icon>add</mat-icon></button>
+    </div>
+</div> 
+
+
+<form [formGroup]="orderForm" (ngSubmit)="onSubmit()" class="form">
+    <h1>Please Fill in Your Details to continue</h1>
+  
+  <mat-form-field>
+   <mat-label for="itemName">Item Name:</mat-label>
+   <input matInput style="text-align: center; font-weight: bold;" type="text" id="itemName" formControlName="itemName" [(ngModel)]="selectedItem.name" readonly/>
+  </mat-form-field>
+ 
+  <div class="priceQuant">
+  <mat-form-field style="flex:1">
+    <mat-label for="quantity">Quantity:</mat-label>
+    <input matInput  type="number" id="quantity" formControlName="quantity" [(ngModel)]="inputValue" readonly />
+  </mat-form-field>
+
+  <mat-form-field style="flex:1">
+    <mat-label for="price">Price:</mat-label>
+    <input matInput  type="number" id="price" formControlName="price" [(ngModel)]="selectedItem.price" readonly />
+  </mat-form-field>
+  </div>
+
+  <mat-form-field>
+    <mat-label for="total">Total:</mat-label>
+    <input matInput type="number" id="total" formControlName="total" [(ngModel)]="orderForm.value.total"  readonly />
+  </mat-form-field>
+     
+  
+  <mat-form-field >
+   <mat-label for="customerName">Customer Name:</mat-label>
+   <input matInput type="text" id="customerName" formControlName="customerName" />
+   <mat-error *ngIf="customerName.errors?.['required']">Customer Name is Required</mat-error>
+  </mat-form-field>
+  
+  <mat-form-field>
+    <mat-label for="email">Email:</mat-label>
+    <input matInput type="text" id="email" formControlName="email" />
+    <mat-error *ngIf="email.errors?.['required']">Email is Required</mat-error>
+    <mat-error *ngIf="email.errors?.['invalidEmail']">Invalid cannot start with Number</mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+   <mat-label for="contactNumber">Contact Number:</mat-label>
+   <input matInput matInput type="text" id="contactNumber" formControlName="contactNumber"/>
+   <mat-error *ngIf="contactNumber.errors?.['required']">Contact is required</mat-error>
+   <mat-error *ngIf="contactNumber.errors?.['pattern']">cannot starts with 0 </mat-error>
+   <mat-error *ngIf="contactNumber.errors?.['maxlength']">Max length can be 10</mat-error>
+   <mat-error *ngIf="contactNumber.errors?.['minlength']">Minimum required length 10</mat-error>
+  </mat-form-field>
+   
+  <mat-form-field>
+  <mat-label for="address">Address:</mat-label>
+  <textarea matInput id="address" formControlName="address"></textarea>
+  <mat-error *ngIf="address.errors?.['required']">Address is required</mat-error>
+  </mat-form-field>
+  
+  <mat-form-field>
+  <mat-label for="specialInstructions">Special Instructions:</mat-label>
+  <textarea matInput id="specialInstructions" formControlName="specialInstructions"></textarea>
+  </mat-form-field>
+
+  <button mat-raised-button type="submit" color="warn">Place Order<mat-icon>done</mat-icon></button>
+</form>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<form [formGroup]="orderForm" (ngSubmit)="onSubmit()" class="form">
+    
+  
+    <mat-form-field>
+     <mat-label for="itemName">Item Name:</mat-label>
+     <input matInput type="text" id="itemName" formControlName="itemName" [(ngModel)]="selectedItem.name" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label for="quantity">Quantity:</mat-label>
+      <input matInput type="number" id="quantity" formControlName="quantity" [(ngModel)]="inputValue" readonly />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label for="price">Price:</mat-label>
+      <input matInput type="number" id="price" formControlName="price" [(ngModel)]="selectedItem.price" readonly />
+    </mat-form-field>
+       
+    <mat-form-field>
+      <mat-label for="total">Total:</mat-label>
+      <input matInput type="number" id="total" formControlName="total"  readonly />
+    </mat-form-field>
+       
+       
+    <mat-form-field>
+     <mat-label for="customerName">Customer Name:</mat-label>
+     <input matInput type="text" id="customerName" formControlName="customerName" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label for="email">Email:</mat-label>
+      <input matInput type="text" id="email" formControlName="email" />
+    </mat-form-field>
+  
+    <mat-form-field>
+     <mat-label for="contactNumber">Contact Number:</mat-label>
+     <input matInput matInput type="text" id="contactNumber" formControlName="contactNumber" />
+    </mat-form-field>
+     
+    <mat-form-field>
+    <mat-label for="address">Address:</mat-label>
+    <textarea matInput id="address" formControlName="address"></textarea>
+    </mat-form-field>
+    
+    <mat-form-field>
+    <mat-label for="specialInstructions">Special Instructions:</mat-label>
+    <textarea matInput id="specialInstructions" formControlName="specialInstructions"></textarea>
+    </mat-form-field>
+  
+    <button mat-raised-button type="submit" color="warn"><mat-icon>done</mat-icon></button>
+  </form>-->

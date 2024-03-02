@@ -1,0 +1,32 @@
+<mat-toolbar>
+    <span class="title-animate" [matTooltip]="'TITLE'">Cake-Bake <mat-icon>cake</mat-icon></span>
+    <div class="spacer"></div>
+   
+    <div  class="div">
+    
+      
+
+
+      <span *ngIf="isLoggedIn" class="user"> Welcome- {{ authService.loggedUser.firstName }}</span>
+      <button mat-icon-button routerLink="/home" [matTooltip]="'Home'">
+        <mat-icon>home</mat-icon>
+      </button>
+  
+      <button mat-icon-button  [matTooltip]="'View cart'" routerLink="request-view">
+        <mat-icon>shopping_basket</mat-icon>
+      </button>
+
+      <button *ngIf="!isLoggedIn" mat-fab [matTooltip]="'LOGIN'"  (click)="log()" routerLink="/login">
+        <mat-icon style="font-size: 25px;">person</mat-icon>
+      </button>
+    
+      <button *ngIf="isLoggedIn" mat-fab color="warn" [matTooltip]="'logout'" (click)="logout()" >
+        <mat-icon style="font-size: 25px;">logout</mat-icon>
+      </button>
+      </div>
+      
+</mat-toolbar>
+
+<router-outlet></router-outlet>
+<!-- <app-home-view></app-home-view>
+<app-order-view></app-order-view> -->

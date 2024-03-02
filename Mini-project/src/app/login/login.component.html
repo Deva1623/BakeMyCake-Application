@@ -1,0 +1,43 @@
+
+   <mat-card class="card-body">
+ 
+      <mat-card-header >
+        <mat-card-title>Login<mat-icon>lock</mat-icon></mat-card-title>
+      </mat-card-header>
+
+      <mat-card-content>
+        <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+
+          <mat-form-field>
+            <mat-label>Email:</mat-label>
+            <input matInput placeholder="Enter your Email" type="email" name="email" [(ngModel)]="email" required pattern="^[^0-9][a-zA-Z0-9._-]+@gmail.com">
+            <mat-error *ngIf="loginForm.controls['email']?.hasError('required')">Email is required</mat-error>
+            <mat-error *ngIf="loginForm.controls['email']?.hasError('pattern')">Invalid email address</mat-error>
+           
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Password:</mat-label>
+            <input matInput placeholder=" Enter your Password" type="password" name="password" [(ngModel)]="password" required minlength="12">
+            <mat-error *ngIf="loginForm.controls['password']?.hasError('required')">Password is required</mat-error>
+          </mat-form-field>
+
+          <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid">Login</button>
+          
+          <h2>New user? click here to Sign-Up</h2>
+          <button mat-mini-fab color="primary" routerLink="/sign-up"><mat-icon>person_add</mat-icon></button>
+
+          <hr style="height:1px; background-color: rgba(37, 37, 73, 0.959); margin-top: 30px; ">
+          <h2>Login using</h2>
+          <div class="social-media">
+            <button mat-fab class="gg"><i class="fab fa-google"></i>+</button>
+            <button mat-fab class="fb"><i class="fab fa-facebook"></i></button>
+            <button mat-fab class="in"><i class="fab fa-instagram"></i></button>
+            <button mat-fab class="tt"><i class="fab fa-twitter"></i></button>
+          </div>
+        </form>
+
+      </mat-card-content>
+
+    
+  </mat-card>

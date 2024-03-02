@@ -1,0 +1,51 @@
+
+<div class="container">
+
+
+<div class="thank">
+    <h3 style="font-size:20px;">Thank You For Your Order</h3>
+    <p>Your order has been placed successfully<mat-icon>done_outline</mat-icon></p>
+</div>
+<mat-card>
+  <mat-card-content>
+    <div class="exp">
+    <h1>How was Your Experience?</h1>
+    <h3>Please Rate us and Provide Feedback</h3>
+    </div>
+
+     <div class="emotion">
+       <div class="a" (click)="selectSentiment('very dissatisfied')">
+       <mat-icon style="color:red" >sentiment_very_dissatisfied</mat-icon>
+       <h2>sad</h2><input type="radio" name="sentiment" value="very dissatisfied">
+       </div>
+       <div class="a" (click)="selectSentiment('dissatisfied')">
+       <mat-icon style="color:rgb(221, 145, 4)">sentiment_dissatisfied</mat-icon>
+       <h2>Fine</h2> <input type="radio" name="sentiment" value="dissatisfied">
+       </div>
+       <div class="a" (click)="selectSentiment('neutral')">
+        <mat-icon style="color:rgb(185, 185, 0)">sentiment_neutral</mat-icon>
+        <h2>Ok</h2><input type="radio" name="sentiment" value="neutral">
+       </div>
+       <div class="a" (click)="selectSentiment('good')">
+        <mat-icon style="color:blue">mood</mat-icon>
+        <h2>Happy</h2><input type="radio" name="sentiment" value="good">
+        </div>
+        <div class="a" (click)="selectSentiment('Excellent')">
+        <mat-icon style="color:green">sentiment_very_satisfied</mat-icon>
+        <h2>Excellent</h2> <input type="radio" name="sentiment" value="Excellent">
+        </div>
+    </div>
+    <mat-form-field>
+        <mat-label>Suggestions</mat-label>
+    <textarea matInput type="text" [(ngModel)]="suggestion" name="suggestion"></textarea>
+    </mat-form-field>
+
+    <button mat-raised-button (click)="submit()" color="primary">Submit</button>
+
+  </mat-card-content>
+</mat-card>
+
+    
+    <button style="width: 100%; margin-top: 30px;" mat-icon-button><mat-icon>home</mat-icon>Click here to go back</button>
+
+</div>

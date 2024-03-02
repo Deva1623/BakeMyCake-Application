@@ -1,0 +1,8 @@
+
+<div matRipple [matRippleColor]="color" [matRippleRadius]="radius">
+<app-category-filter (categoryChanged)="onCategoryChanged($event)"></app-category-filter>
+<app-search (searchEvent)="onSearch($event)"></app-search>
+
+<app-image-cards *ngFor="let item of items" [item]="item"></app-image-cards>
+
+</div>

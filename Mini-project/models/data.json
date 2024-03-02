@@ -1,0 +1,446 @@
+{
+  "orders": [
+    {
+      "itemName": "Chocolate Blueberries Cake",
+      "quantity": 1,
+      "price": 400,
+      "total": 400,
+      "customerName": "aditya",
+      "email": "dd@gmail.com",
+      "contactNumber": "7686545687",
+      "address": "mantola, agra , 575002",
+      "specialInstructions": "nothing",
+      "id": 7,
+      "processed": true
+    },
+    {
+      "itemName": "Cookies Cream Cake",
+      "quantity": 1,
+      "price": 240,
+      "total": 240,
+      "customerName": "diwa",
+      "email": "dk@gmail.com",
+      "contactNumber": 78787878787,
+      "address": "allen Street, indore, 475678",
+      "specialInstructions": "no",
+      "id": 8,
+      "processed": true
+    },
+    {
+      "itemName": "Chocolate Summer Berries",
+      "quantity": 2,
+      "price": 150,
+      "total": 300,
+      "customerName": "diwakar",
+      "email": "dsk@gmail.com",
+      "contactNumber": "6266812671",
+      "address": "aloknagar sliver estate appartments , Indore, 475001",
+      "specialInstructions": "please make it more chocolatey",
+      "id": 9,
+      "processed": true
+    },
+    {
+      "itemName": "Chocolate Summer Berries",
+      "quantity": 2,
+      "price": 150,
+      "total": 300,
+      "customerName": "diwakar",
+      "email": "diwakar@gmail.com",
+      "contactNumber": 6785768767,
+      "address": "gwalior, gwalior, 575001",
+      "specialInstructions": "please i want more chocolatey cake, its urgent",
+      "id": 10,
+      "processed": true
+    },
+    {
+      "itemName": "Chocolate Cookies",
+      "quantity": 2,
+      "price": 200,
+      "total": 400,
+      "customerName": "Shiva",
+      "email": "ds@gmail.com",
+      "contactNumber": 7897897898,
+      "address": "allen street , green oak apartments , indore , 474005",
+      "specialInstructions": "",
+      "id": 11
+    }
+  ],
+  "credentials": [
+    {
+      "id": 1,
+      "firstName": "Admin",
+      "email": "admin@gmail.com",
+      "password": "Admin@123456",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "firstName": "User",
+      "email": "user@gmail.com",
+      "password": "user",
+      "role": "user"
+    },
+    {
+      "id": 3,
+      "firstName": "diwa",
+      "lastName": "",
+      "password": "Aa@12345",
+      "confirmPassword": "Aa@12345",
+      "gender": "male",
+      "age": 24,
+      "email": "dk@gmail.com",
+      "phone": 78787878787,
+      "address": {
+        "street": "allen Street",
+        "city": "indore",
+        "state": "Madhya pradesh",
+        "zipCode": 475678
+      },
+      "role": "user"
+    },
+    {
+      "id": 4,
+      "firstName": "deepak",
+      "lastName": "",
+      "password": "Diwakar@12345",
+      "confirmPassword": "Diwakar@12345",
+      "gender": "male",
+      "age": 22,
+      "email": "dks@gmail.com",
+      "phone": 7897897898,
+      "address": {
+        "street": "",
+        "city": "",
+        "state": "",
+        "zipCode": ""
+      },
+      "role": "user"
+    },
+    {
+      "id": 5,
+      "firstName": "Shiva",
+      "lastName": "",
+      "password": "Diwakar@12345",
+      "confirmPassword": "Diwakar@12345",
+      "gender": "male",
+      "age": 22,
+      "email": "ds@gmail.com",
+      "phone": 7897897898,
+      "address": {
+        "street": "",
+        "city": "",
+        "state": "",
+        "zipCode": ""
+      },
+      "role": "user"
+    },
+    {
+      "id": 6,
+      "firstName": "asa",
+      "lastName": "",
+      "password": "Diwakar@12345",
+      "confirmPassword": "Diwakar@12345",
+      "gender": "male",
+      "age": 22,
+      "email": "dksd@gmail.com",
+      "phone": "",
+      "address": {
+        "street": "",
+        "city": "",
+        "state": "",
+        "zipCode": ""
+      },
+      "role": "user"
+    },
+    {
+      "id": 7,
+      "firstName": "diwakar",
+      "lastName": "s",
+      "password": "Diwakar@12345",
+      "confirmPassword": "Diwakar@12345",
+      "gender": "male",
+      "age": 25,
+      "email": "dsk@gmail.com",
+      "phone": 6266812671,
+      "address": {
+        "street": "abcd",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "zipCode": 475001
+      },
+      "role": "user"
+    },
+    {
+      "id": 8,
+      "firstName": "diwakar",
+      "lastName": "s",
+      "password": "Diwakar@12345",
+      "confirmPassword": "Diwakar@12345",
+      "gender": "male",
+      "age": 25,
+      "email": "diwakar@gmail.com",
+      "phone": 6785768767,
+      "address": {
+        "street": "gwalior",
+        "city": "gwalior",
+        "state": "Madhya Pradesh",
+        "zipCode": 575001
+      },
+      "role": "user"
+    }
+  ],
+  "feedbacks": [
+    {
+      "id": 0
+    },
+    {
+      "id": 1
+    },
+    {
+      "sentiment": "good",
+      "suggestion": "pls add more items in futute",
+      "id": 5
+    },
+    {
+      "sentiment": "good",
+      "suggestion": "please add more items in future otherwise all things are ok",
+      "id": 6
+    },
+    {
+      "sentiment": "good",
+      "suggestion": "wow",
+      "email": "ds@gmail.com",
+      "username": "Shiva",
+      "id": 7
+    },
+    {
+      "email": "ds@gmail.com",
+      "username": "Shiva",
+      "id": 8
+    },
+    {
+      "sentiment": "good",
+      "email": "ds@gmail.com",
+      "username": "Shiva",
+      "id": 9
+    },
+    {
+      "sentiment": "Excellent",
+      "email": "ds@gmail.com",
+      "username": "Shiva",
+      "id": 10
+    },
+    {
+      "sentiment": "Excellent",
+      "email": "ds@gmail.com",
+      "username": "Shiva",
+      "id": 11
+    },
+    {
+      "sentiment": "very dissatisfied",
+      "email": "ds@gmail.com",
+      "username": "Shiva",
+      "id": 12
+    },
+    {
+      "sentiment": "very dissatisfied",
+      "email": "ds@gmail.com",
+      "username": "Shiva",
+      "id": 13
+    },
+    {
+      "sentiment": "dissatisfied",
+      "email": "ds@gmail.com",
+      "username": "Shiva",
+      "id": 14
+    },
+    {
+      "sentiment": "neutral",
+      "email": "ds@gmail.com",
+      "username": "Shiva",
+      "id": 15
+    },
+    {
+      "sentiment": "good",
+      "email": "ds@gmail.com",
+      "username": "Shiva",
+      "id": 16
+    },
+    {
+      "sentiment": "Excellent",
+      "email": "ds@gmail.com",
+      "username": "Shiva",
+      "id": 17
+    },
+    {
+      "sentiment": "Excellent",
+      "email": "ds@gmail.com",
+      "username": "Shiva",
+      "id": 18
+    }
+  ],
+  "data": [
+    {
+      "id": 1,
+      "name": "Berries Summer Cupcakes",
+      "description": "Delicious cupcakes with fresh summer berries.",
+      "price": 200,
+      "image": "assets/images/food-image/Berries Summer Cupcakes.jpg",
+      "category": "cupcakes",
+      "rating": 4.5
+    },
+    {
+      "id": 2,
+      "name": "Easter Cupcakes",
+      "description": "Cupcakes  for celebrations.",
+      "price": 100,
+      "image": "assets/images/food-image/Easter Cupcakes.jpg",
+      "category": "cupcakes",
+      "rating": 4.1
+    },
+    {
+      "id": 3,
+      "name": "Cookies Cream Cake",
+      "description": "Cake with a cookies and cream flavor.",
+      "price": 240,
+      "image": "assets/images/food-image/Cookies Cream Cake.jpg",
+      "category": "cakes",
+      "rating": 4.8
+    },
+    {
+      "id": 4,
+      "name": "Cherry Jelly Cheesecake",
+      "description": "Creamy cheesecake topped with cherry jelly.",
+      "price": 400,
+      "image": "assets/images/food-image/Cherry Jelly Cheesecake.jpg",
+      "category": "cakes",
+      "rating": 5
+    },
+    {
+      "id": 5,
+      "name": "Chocolate Blueberries Cake",
+      "description": "Chocolate cake with blueberry topping.",
+      "price": 400,
+      "image": "assets/images/food-image/Chocolate Blueberries Cake.jpg",
+      "category": "cake",
+      "rating": 4.3
+    },
+    {
+      "id": 6,
+      "name": "Chocolate Summer Berries",
+      "description": "Chocolate dessert with fresh summer berries.",
+      "price": 150,
+      "image": "assets/images/food-image/Chocolate Summer Berries.jpg",
+      "category": "cakes",
+      "rating": 4.2
+    },
+    {
+      "id": 7,
+      "name": "Chocolate Cookies",
+      "description": "Irresistible chocolate cookies.",
+      "price": 200,
+      "image": "assets/images/food-image/Chocolate Cookies.jpg",
+      "category": "cookies",
+      "rating": 4.1
+    },
+    {
+      "id": 8,
+      "name": "Chocolate Cupcake",
+      "description": "Classic chocolate cupcakes.",
+      "price": 50,
+      "image": "assets/images/food-image/Chocolate Cupcake.jpg",
+      "category": "cupcakes",
+      "rating": 4
+    },
+    {
+      "id": 9,
+      "name": "Chocolate Bonbons",
+      "description": "Delightful chocolate bonbons.",
+      "price": 100,
+      "image": "assets/images/food-image/Chocolate Bonbons.jpg",
+      "category": "cupcakes",
+      "rating": 4.4
+    },
+    {
+      "id": 10,
+      "name": "Classic Cheesecake",
+      "description": "Timel classic cheesecake.",
+      "price": 350,
+      "image": "assets/images/food-image/Classic Cheesecake.jpg",
+      "category": "cakes",
+      "rating": 4.5
+    },
+    {
+      "id": 11,
+      "name": "Butter Cookies",
+      "description": "Classic buttery cookies.",
+      "price": 100,
+      "image": "assets/images/food-image/Butter Cookies.jpg",
+      "category": "cookies",
+      "rating": 4.8
+    },
+    {
+      "id": 12,
+      "name": "Brownies Different Flavor",
+      "description": "Assorted brownies with various flavors.",
+      "price": 300,
+      "image": "assets/images/food-image/Brownies Different Flavor.jpg",
+      "category": "brownies",
+      "rating": 4.7
+    },
+    {
+      "id": 13,
+      "name": "Fruit Cake",
+      "description": "Fruit-filled cake for a fruity delight.",
+      "price": 150,
+      "image": "assets/images/food-image/Fruit Cake.jpg",
+      "category": "cakes",
+      "rating": 4.6
+    },
+    {
+      "id": 14,
+      "name": "Isometric Chocolate Brownies",
+      "description": "dark chocolate brownies.",
+      "price": 100,
+      "image": "assets/images/food-image/Isometric chocolate brownies.jpg",
+      "category": "brownies",
+      "rating": 4
+    },
+    {
+      "id": 15,
+      "name": "Monster Theme Cake",
+      "description": "Cake with a funny and spooky monster look.",
+      "price": 200,
+      "image": "assets/images/food-image/Monster Theme Cake.jpg",
+      "category": "cakes",
+      "rating": 3.9
+    },
+    {
+      "id": 16,
+      "name": "Muffin Devil Horns",
+      "description": "Muffins with a devil horns.",
+      "price": 50,
+      "image": "assets/images/food-image/Muffin Devil Horns.jpg",
+      "category": "cupcakes",
+      "rating": 3.8
+    },
+    {
+      "id": 17,
+      "name": "Muffin Ghost",
+      "description": "Muffins with a ghostly look.",
+      "price": 100,
+      "image": "assets/images/food-image/Muffin Ghost.jpg",
+      "category": "cupcakes",
+      "rating": 4
+    },
+    {
+      "id": 18,
+      "name": "Pumpkin Spice Cupcakes",
+      "description": "Cupcakes with the flavors of pumpkin spice.",
+      "price": 50,
+      "image": "assets/images/food-image/Pumpkin Spice Cupcakes.jpg",
+      "category": "cupcakes",
+      "rating": 4
+    }
+  ]
+}

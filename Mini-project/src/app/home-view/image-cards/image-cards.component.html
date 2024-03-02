@@ -1,0 +1,26 @@
+
+
+    
+     <div class="image-card" (click)="redirectToOrderView()" >
+      
+         <div class="image-container">
+          <img [src]="item.image" class="img" />
+          </div>
+       
+          <h3>{{ item.name }}</h3>
+          <div style="display: flex; justify-content: space-around;">
+          <p> Item-Price: ${{item.price}}</p>
+          <p><mat-icon>star_border</mat-icon>{{item.rating}}</p>
+          </div>
+          <div class="row">
+          <p>{{ item.description }}</p>
+          <button mat-icon-button style="color: rgb(255, 123, 0);  margin-bottom: 20px;" [matTooltip]="'Thumbs up'"><mat-icon>favorite</mat-icon></button>
+        
+          <button mat-icon-button  style="color: blue;" [matTooltip]="'Add to cart'"><mat-icon>shopping_cart</mat-icon></button>
+      
+          </div>
+          
+        
+      </div>
+   
+
